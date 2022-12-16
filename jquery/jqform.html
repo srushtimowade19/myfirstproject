@@ -1,0 +1,28 @@
+javascript form
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT FORM</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+		<p>Enter Data: <input type="text" id="i1" onkeyup="fun();">
+		</p>
+
+		 <p id="op"></p>
+		 <script type="text/javascript">
+		 	// i1=document.getElementById('i1');
+		 	// op=document.getElementById('op');
+
+		 	function fun(){
+		 		// data=i1.value; //fatch the data from input tag and store into variable
+		 		// op.innerHTML=data;
+		 		$('#i1').attr('type','text')
+		 		$('#op').html('data')
+		 	}
+		 </script>
+
+</body>
+</html>

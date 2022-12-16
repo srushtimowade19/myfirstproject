@@ -1,0 +1,620 @@
+<!-- basic alert -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+This is javascript
+<button onclick="alert('hello')">click me</button>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+This is javascript
+<button ondblclick="alert('hello')">click me</button>
+<p onclick="alert('hello')">this is paragraph</p>
+</body>
+</html>
+
+<!-- print -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+This is javascript
+<script type="text/javascript">
+	a=5;
+	console.log('a='+a);
+	document.write('a='+a);
+</script>
+</body>
+</html>
+
+<!-- addition -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+This is javascript
+<script type="text/javascript">
+	a=5;
+	b=6;
+	c=a+b;
+	console.log('c='+c);
+	document.write('c='+c);
+</script>
+</body>
+</html>
+
+//change color of text
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<p id="p1">This is javascript</p>
+<p id="p2">This is javascript</p>
+<script type="text/javascript">
+	//to select particular element
+	a=document.getElementById('p1');
+	console.log(a);
+	//css
+	a.style.backgroundColor='red';
+
+</script>
+</body>
+</html>
+
+
+
+//onclick color change using function
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<p id="p1">This is javascript</p>
+<button onclick="red();">red</button>
+<button onclick="green();">green</button>
+<button onclick="blue();">blue</button>
+
+<script type="text/javascript">
+	function red(){
+	//to select particular element
+	a=document.getElementById('p1');
+	console.log(a);
+	//css
+	a.style.backgroundColor='red';
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+function green(){
+	//to select particular element
+	a=document.getElementById('p1');
+	console.log(a);
+	//css
+	a.style.backgroundColor='green';
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+function blue(){
+	//to select particular element
+	a=document.getElementById('p1');
+	console.log(a);
+	//css
+	a.style.backgroundColor='blue';
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+</script>
+</body>
+</html>
+
+//shorten code
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<p id="p1">This is javascript</p>
+<button onclick="fun('red');">red</button>
+<button onclick="fun('green');">green</button>
+<button onclick="fun('blue');">blue</button>
+
+<script type="text/javascript">
+	//to select particular element
+	a=document.getElementById('p1');
+	function fun(arg){
+	//css
+	a.style.backgroundColor=arg;
+	a.style.color="white";
+	a.style.border="2px solid black";
+}
+
+</script>
+</body>
+</html>
+-------------------------------------------------------------------------------------
+//counter using function
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<button onclick="up();">up</button>
+<button onclick="down();">down</button>
+<p id="p1" > 0 </p>
+
+
+<script type="text/javascript">
+	
+	a=document.getElementById('p1');
+	i=0;
+	function up(){
+	//css
+	a.innerHTML=i;
+	i++;
+
+}
+function down(){
+	//css
+	a.innerHTML=i;
+	i--;
+	
+}
+</script>
+</body>
+</html>
+------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style type="text/css">
+		#d1{height: 200px;
+			width: 200px;
+			background-color:black;}
+	</style>
+</head>
+<body>
+<button onclick="left();">left</button>
+<button onclick="right();">right</button>
+<div id="d1"></div>
+
+
+<script type="text/javascript">
+	
+	a=document.getElementById('d1');
+	i=0;
+	function left(){
+	//css
+	a.style.marginLeft=i+'px';
+	i--;
+
+}
+function right(){
+	//css
+	a.style.marginLeft=i+'px';
+	i++;
+	
+}
+</script>
+</body>
+</html>
+-------------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<p id="p1">This is javascript</p>
+<button onclick="fun1('black');">color add</button>
+<button onclick="fun1('white');">color remove</button>
+<button onclick="fun2('red');">background color add</button>
+<button onclick="fun2('white');">background color remove</button>
+<button onclick="fun3('larger');">Incrise font size</button>
+<button onclick="fun3('smaller');">decrise fornt size</button>
+<button onclick="fun4('bold');">Bold</button>
+<button onclick="fun4('normal');">Un Bold</button>
+<button onclick="fun5('italic');">Italic</button>
+<button onclick="fun5('normal');">Un Italic</button>
+
+<script type="text/javascript">
+	//to select particular element
+	a=document.getElementById('p1');
+	
+function fun1(arg){
+	//css
+	a.style.color=arg;
+	a.style.border="2px solid black";
+}
+function fun2(arg){
+	//css
+	a.style.backgroundColor=arg;
+	a.style.border="2px solid black";
+}
+function fun3(arg){
+	//css
+	a.style.fontSize=arg;
+
+
+
+}
+function fun4(arg){
+	//css
+	a.style.fontWeight=arg;
+
+
+}
+function fun5(arg){
+	//css
+	a.style.fontStyle=arg;
+
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
+=======================================================================
+put color in tags name using array
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elements by id</title>
+</head>
+
+<body>
+<p class="p1">this is para one</p>
+<p class="p1">this is para two</p>
+<p class="p1">this is para three</p>
+<p>this is para four</p>
+<script type="text/javascript">
+	a=document.getElementsByTagName('p');
+	a[0].style.color="red";
+	a[1].style.color="green";
+	a[2].style.backgroundColor="yellow";
+	a[3].style.color="pink";
+
+
+</script>
+</body>
+</html>
+============================================================================
+select element by class name 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elements by id</title>
+</head>
+<body>
+<p class="p1">this is para one</p>
+<p class="p1">this is para two</p>
+<p class="p1">this is para three</p>
+<p class="p1">this is para four</p>
+<script type="text/javascript">
+	a=document.getElementsByClassName('p1');
+	console.log(a);
+	a[0].style.color="red";
+	a[1].style.color="green";
+	a[2].style.backgroundColor="yellow";
+	a[3].style.color="pink";
+
+
+</script>
+</body>
+</html>
+========================================================================
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elements by id</title>
+</head>
+<body>
+	<h2 calss="p1" id="head1">heading
+	</h2>
+<p class="p1">this is para one</p>
+<p class="p1">this is para two</p>
+<div>
+	<p> para inside div</p>
+</div>
+<script type="text/javascript">
+	//tag selector
+	a=document.querySelectorAll('h2');
+	//id selector
+	b=document.querySelectorAll('#head1');
+	//class
+	c=document.querySelectorAll('.p1');
+
+	d=document.querySelectorAll('div p');
+
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	console.log(d);
+
+	a[0].style.color="red";
+	a[1].style.color="green";
+	a[2].style.backgroundColor="yellow";
+	a[3].style.color="pink";
+
+
+</script>
+</body>
+</html>
+
+================================================================================
+image clear and zoom as well as rotate on mouse hover
+
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 600px;
+			background: rgb(0,0,0);
+			border: 1px solid black;
+
+		}
+	</style>
+</head>
+<body>
+<button onclick="add('red');"> Add Red</button>
+<button onclick="remove('red');"> Remove Red</button>
+<button onclick="add('green');"> Add Green</button>
+<button onclick="remove('green');"> Remove Green</button>
+<button onclick="add('blue');"> Add Blue</button>
+<button onclick="remove('blue');"> Remove Blue</button>
+
+<div id="div1">
+</div>
+<script type="text/javascript">
+	a=document.querySelectorAll('#div1');
+	r=0;g=0;b=0;
+	function add(arg){
+		if(arg=='red') r+=10;
+		if(arg=='green') g+=10;
+		if(arg=='blue') b+=10;
+		a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+
+	}
+	function remove(arg){
+		if(arg=='red') r-=10;
+		if(arg=='green') g-=10;
+		if(arg=='blue') b-=10;
+		a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+
+
+	}
+</script>
+</body>
+</html>
+==========================================================================
+
+roatate the div in clock wise direction and another div inside it should rotate anticlockwise
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 100px;
+			background: red;
+			border: 1px solid black;
+			
+
+		}
+		#div2{
+			height: 50px;
+			width: 50px;
+			background: black;
+			border: 1px solid black;
+			margin: 25px;
+		}
+	</style>
+</head>
+<body>
+<button onclick="rotate();">rotate</button>
+<button onclick="antirotate();">antirotate</button>
+<br>
+<br>
+<div id="div1">
+<div id="div2"></div>
+</div>
+<script type="text/javascript">
+	b=0;
+	a=document.querySelectorAll('#div1');
+	c=document.querySelectorAll('#div2');
+	function rotate()
+	{
+		a[0].style.transform='rotate('+b+'deg)';
+		b+=25;
+	}
+	function antirotate()
+	{
+		c[0].style.transform='rotate('+b+'deg)';
+		b-=25;
+	}
+
+</script>
+
+</body>
+</html>
+=========================================================================
+screen saver
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 700px;
+			width: 800px;
+			background: red;
+			border: 1px solid black;
+		
+		}
+		
+	</style>
+</head>
+<body>
+<div id="div1">
+</div>
+<script type="text/javascript">
+	r=0;g=0;b=0;
+	a=document.querySelectorAll('#div1');
+	function screen()
+	{
+		if (r==255) r=0;
+		if (g==255) r=0;
+		if (b==255) r=0;
+		r+=10;
+		g+=40;
+		b+=80;
+
+		a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+		console.log(b);
+	}
+
+
+setInterval('screen()',1000);
+
+</script>
+
+</body>
+</html>
+===================================================================================
+move the div in 300 px in right
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 100px;
+			background: red;
+			border: 1px solid black;
+		
+		}
+		
+	</style>
+</head>
+<body>
+<div id="div1">
+</div>
+<script type="text/javascript">
+	r=0;g=0;b=0;i=0;
+	a=document.querySelectorAll('#div1');
+	function screen()
+	{
+		if (r>255) r=0;
+		if (g>255) g=0;
+		if (b>255) b=0;
+		r+=10;
+		g+=40;
+		b+=80;
+
+		a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+		a[0].style.marginLeft=i+'px';
+	i++;
+	 if(i>=300){
+			clearInterval(x);}
+		console.log(i);
+	}
+	
+
+
+x=setInterval('screen()',10);
+
+</script>
+
+</body>
+</html>
+
+======================================================================================================
+
+javascript form
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT FORM</title>
+</head>
+<body>
+		<p>Enter Data: <input type="text" id="i1" onkeyup="fun();">
+		</p>
+
+		 <p id="op"></p>
+		 <script type="text/javascript">
+		 	i1=document.getElementById('i1');
+		 	op=document.getElementById('op');
+		 	function fun(){
+		 		data=i1.value; //fatch the data from input tag and store into variable
+		 		op.innerHTML=data;
+
+		 	}
+		 </script>
+
+</body>
+</html>
+======================================================================================
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT FORM</title>
+</head>
+<body>
+		<p>Enter Data: <input type="text" id="i1" onkeyup="fun();">
+		</p>
+
+		 <p id="op"></p>
+		 <script type="text/javascript">
+		 	i1=document.getElementById('i1');
+		 	op=document.getElementById('op');
+		 	function fun(){
+		 		data=i1.value; //fatch the data from input tag and store into variable
+		 		len=data.length;
+		 		op.innerHTML='you have entered :'+len;
+		 		if(len>=10){op.style.color='red';}
+		 		if(len<=10){op.style.color='green';}
+
+
+		 	}
+		 </script>
+
+</body>
+</html>

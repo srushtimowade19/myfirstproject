@@ -1,0 +1,48 @@
+move the div in 300 px in right
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 100px;
+			background: red;
+			border: 1px solid black;
+		
+		}
+		
+	</style>
+</head>
+<body>
+<div id="div1">
+</div>
+<script type="text/javascript">
+	r=0;g=0;b=0;i=0;
+	a=document.querySelectorAll('#div1');
+	function screen()
+	{
+		if (r>255) r=0;
+		if (g>255) g=0;
+		if (b>255) b=0;
+		r+=10;
+		g+=40;
+		b+=80;
+
+		a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+		a[0].style.marginLeft=i+'px';
+		a[0].style.marginTop=i+'px';
+	i++;
+	 if(i>=300){
+			clearInterval(x);}
+		console.log(i);
+	}
+	
+
+
+x=setInterval('screen()',10);
+
+</script>
+
+</body>
+</html>

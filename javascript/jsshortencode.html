@@ -1,0 +1,30 @@
+//shorten code
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<p id="p1">This is javascript</p>
+<button onclick="fun('red');">red</button>
+<button onclick="fun('green');">green</button>
+<button onclick="fun('blue');">blue</button>
+
+<script type="text/javascript">
+	// //to select particular element
+	// a=document.getElementById('p1');
+	function fun(arg){
+	// //css
+	// a.style.backgroundColor=arg;
+	// a.style.color="white";
+	// a.style.border="2px solid black";
+
+	$('#p1').css('background-color',arg)
+
+}
+
+</script>
+</body>
+</html>

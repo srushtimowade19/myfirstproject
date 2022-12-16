@@ -1,0 +1,48 @@
+put color in tags name using array
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elements by id</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script>
+
+  
+</script>
+</head>
+
+<body>
+<p class="p1">this is para one</p>
+<p class="p1">this is para two</p>
+<p class="p1">this is para three</p>
+<p>this is para four</p>
+<!-- <button>click me</button> -->
+<script type="text/javascript">
+	// a=document.getElementsByTagName('p');
+	// a[0].style.color="red";
+	// a[1].style.backgroundColor="green";
+	// a[2].style.backgroundColor="yellow";
+	// a[3].style.backgroundColor="pink";
+	// $('p').toArray().css('background-color','red')
+	// console.log($('p').toArray())
+// 	$("button").click(function(){
+//   var x = $("p").toArray()
+//   for (i = 0; i < x.length; i++) {
+//     alert(x[i].innerHTML);
+//   }
+// });
+	// $("p").css("background-color":"red")
+
+
+    var x = $("p").toArray()
+    for (i = 0; i< x.length; i++) {
+      // alert(x[i].innerHTML);
+      $(x[0]).css('color','blue')
+       $(x[1]).css('background-color','red')
+        $(x[2]).css('background-color','yellow')
+         $(x[3]).css('background-color','pink')
+    }
+  
+
+</script>
+</body>
+</html>

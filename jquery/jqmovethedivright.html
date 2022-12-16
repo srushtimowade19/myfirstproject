@@ -1,0 +1,100 @@
+move the div in 300 px in right
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 100px;
+			background: red;
+			border: 1px solid black;
+		
+		}
+		
+	</style>
+</head>
+<body>
+<div id="div1">
+</div>
+
+<script type="text/javascript">
+	r=0;g=0;b=0;i=0;j=0;
+	// a=document.querySelectorAll('#div1');
+	function screen()
+	{
+		if (r>255) r=0;
+		if (g>255) g=0;
+		if (b>255) b=0;
+		r+=10;
+		g+=40;
+		b+=80;
+
+		// a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+		// a[0].style.marginLeft=i+'px';
+		$('div').css('background-color','rgb('+r+','+g+','+b+')')
+		$('div').css('margin-left',i+'px')
+		
+	i++;
+	console.log(i)
+	 if(i>=300){
+			clearInterval(x);
+		y=setInterval('sru()',10);
+		}
+		// console.log(i);
+	}
+	function sru(){
+		if (r>255) r=0;
+		if (g>255) g=0;
+		if (b>255) b=0;
+		r+=10;
+		g+=40;
+		b+=80;
+		$('div').css('background-color','rgb('+r+','+g+','+b+')')
+		$('div').css('margin-top',j+'px')
+		j++;
+		console.log(j)
+		if(j>=300){
+		clearInterval(y);
+		z=setInterval('sru1()',10);
+	}
+	}
+	function sru1(){
+		if (r>255) r=0;
+		if (g>255) g=0;
+		if (b>255) b=0;
+		r+=10;
+		g+=40;
+		b+=80;
+		$('div').css('background-color','rgb('+r+','+g+','+b+')')
+		$('div').css('margin-left',i+'px')
+		i--;
+		console.log(i)
+		if(i<=0){
+		clearInterval(z);
+		k=setInterval('sru2()',10);}
+	}
+	function sru2(){
+		if (r>255) r=0;
+		if (g>255) g=0;
+		if (b>255) b=0;
+		r+=10;
+		g+=40;
+		b+=80;
+		$('div').css('background-color','rgb('+r+','+g+','+b+')')
+		$('div').css('margin-top',j+'px')
+		j--;
+		console.log(j)
+		if(j<=0){
+		clearInterval(k);
+		
+	}
+	}
+	
+x=setInterval('screen()',10);
+
+</script>
+
+</body>
+</html>

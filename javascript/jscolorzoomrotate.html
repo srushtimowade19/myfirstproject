@@ -1,0 +1,48 @@
+image clear and zoom as well as rotate on mouse hover
+
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 600px;
+			background: rgb(25,50,70);
+			border: 1px solid gray;
+
+		}
+	</style>
+</head>
+<body>
+<button onclick="add('red');"> Add Red</button>
+<button onclick="remove('red');"> Remove Red</button>
+<button onclick="add('green');"> Add Green</button>
+<button onclick="remove('green');"> Remove Green</button>
+<button onclick="add('blue');"> Add Blue</button>
+<button onclick="remove('blue');"> Remove Blue</button>
+
+<div id="div1">
+</div>
+<script type="text/javascript">
+	a=document.querySelectorAll('#div1');
+	r=25;g=50;b=70;
+	function add(arg){
+		if(arg=='red') r+=10;
+		if(arg=='green') g+=10;
+		if(arg=='blue') b+=10;
+		a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+
+	}
+	function remove(arg){
+		if(arg=='red') r-=10;
+		if(arg=='green') g-=10;
+		if(arg=='blue') b-=10;
+		a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+
+
+	}
+</script>
+</body>
+</html>

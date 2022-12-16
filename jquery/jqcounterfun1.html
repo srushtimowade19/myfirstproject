@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<button onclick="up();">up</button>
+<button onclick="down();">down</button>
+<p id="p1" > 0 </p>
+
+
+<script type="text/javascript">
+	
+// 	a=document.getElementById('p1');
+// 	i=0;
+// 	function up(){
+// 	//css
+// 	a.innerHTML=i;
+// 	i+=5;
+
+// }
+// function down(){
+// 	//css
+// 	a.innerHTML=i;
+// 	i-=5;
+	
+// }
+i=0;
+function up() {
+	i+=5
+	$('#p1').html(i)
+	
+}
+function down() {
+	i-=5
+	$('#p1').html(i)
+}
+</script>
+
+</body>
+</html>

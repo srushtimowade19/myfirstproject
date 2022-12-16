@@ -1,0 +1,37 @@
+<!-- counter function -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<style type="text/css">
+		#d1{height: 200px;
+			width: 200px;
+			background-color:black;}
+	</style>
+</head>
+<body>
+<button onclick="left();">left</button>
+<button onclick="right();">right</button>
+<div id="d1"></div>
+
+
+<script type="text/javascript">
+	
+	a=document.getElementById('d1');
+	i=0;
+	function left(){
+	//css
+	a.style.marginLeft=i+'px';
+	i--;
+
+}
+function right(){
+	//css
+	a.style.marginLeft=i+'px';
+	i++;
+	
+}
+</script>
+</body>
+</html>

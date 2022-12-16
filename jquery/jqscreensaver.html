@@ -1,0 +1,45 @@
+screen saver
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<style type="text/css">
+		#div1{
+			height: 700px;
+			width: 800px;
+			background: red;
+			border: 1px solid black;
+		
+		}
+		
+	</style>
+</head>
+<body>
+<div id="div1">
+</div>
+<script type="text/javascript">
+	r=0;g=0;b=0;
+	// a=document.querySelectorAll('#div1');
+	// var x = $('#div1')
+	function screen()
+	{
+		if (r>=255) r=0;
+		if (g>=255) r=0;
+		if (b>=255) r=0;
+		r+=10;
+		g+=40;
+		b+=80;
+
+		// a[0].style.backgroundColor='rgb('+r+','+g+','+b+')';
+		// console.log(b);
+		$('#div1').css('background-color','rgb('+r+','+g+','+b+')')
+	}
+
+
+setInterval('screen()',1000);
+
+</script>
+
+</body>
+</html>

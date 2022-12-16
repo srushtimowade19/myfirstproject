@@ -1,0 +1,109 @@
+<!-- roatate the div in clock wise direction and another div inside it should rotate anticlockwise
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 100px;
+			background: red;
+			border: 1px solid black;
+			
+
+		}
+		#div2{
+			height: 50px;
+			width: 50px;
+			background: black;
+			border: 1px solid black;
+			margin: 25px;
+		}
+	</style>
+</head>
+<body>
+<button onclick="rotate();">rotate</button>
+<button onclick="antirotate();">antirotate</button>
+<br>
+<br>
+<div id="div1">
+<div id="div2"></div>
+</div>
+<script type="text/javascript">
+	b=0;
+	a=document.querySelectorAll('#div1');
+	c=document.querySelectorAll('#div2');
+	function rotate()
+	{
+		a[0].style.transform='rotate('+b+'deg)';
+		b+=25;
+	}
+	function antirotate()
+	{
+		c[0].style.transform='rotate('+b+'deg)';
+		b-=25;
+	}
+
+</script>
+
+</body>
+</html>
+ -->
+
+roatate the div in clock wise direction and another div inside it should rotate anticlockwise
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color mixer</title>
+	<style type="text/css">
+		#div1{
+			height: 100px;
+			width: 100px;
+			background: red;
+			border: 1px solid black;
+			
+
+		}
+		#div2{
+			height: 50px;
+			width: 50px;
+			background: black;
+			border: 1px solid black;
+			margin: 25px;
+		}
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<button onclick="rotate();">rotate</button>
+<button onclick="antirotate();">antirotate</button>
+<br>
+<br>
+<div id="div1">
+<div id="div2"></div>
+</div>
+<script type="text/javascript">
+	b=0;
+	// a=document.querySelectorAll('#div1');
+	// c=document.querySelectorAll('#div2');
+	function rotate()
+	{
+		
+		
+			$('#div1').css('transform','rotate('+b+'deg)')
+			b+=25;
+		}
+		// a[0].style.transform='rotate('+b+'deg)';
+		// b+=25;
+	
+	function antirotate()
+	{
+		// c[0].style.transform='rotate('+b+'deg)';
+		$("#div2").css('transform','rotate('+b+'deg)')
+		b-=25;
+	}
+
+</script>
+
+</body>
+</html>

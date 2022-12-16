@@ -1,0 +1,95 @@
+<!-- select element by class name 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elements by id</title>
+</head>
+<body>
+	<h2 calss="p1" id="head1">heading
+	</h2>
+<p class="p1">this is para one</p>
+<p class="p1">this is para two</p>
+<div>
+	<p> para inside div</p>
+</div>
+<script type="text/javascript">
+	//tag selector
+	a=document.querySelectorAll('h2');
+	//id selector
+	b=document.querySelectorAll('#head1');
+	//class
+	c=document.querySelectorAll('.p1');
+
+	d=document.querySelectorAll('div p');
+
+	console.log(a);
+	console.log(b);
+	console.log(c);
+	console.log(d);
+
+	a[0].style.color="yellow";
+	a[1].style.color="green";
+	a[2].style.backgroundColor="yellow";
+	a[3].style.color="pink";
+
+
+</script>
+</body>
+</html>
+
+ -->
+select element by class name 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>elements by id</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<h2 class="p1" id="head1">heading
+	</h2>
+<p class="p1">this is para one</p>
+<p class="p1">this is para two</p>
+<div>
+	<p> para inside div</p>
+</div>
+<script type="text/javascript">
+	// //tag selector
+	// a=document.querySelectorAll('h2');
+	// //id selector
+	// b=document.querySelectorAll('#head1');
+	// //class
+	// c=document.querySelectorAll('.p1');
+
+	// d=document.querySelectorAll('div p');
+
+
+	// console.log(a);
+	// console.log(b);
+	// console.log(c);
+	// console.log(d);
+
+	var x = $("h2").toArray()
+	var y = $("#head1").toArray()
+	var z = $(".p1").toArray()
+	var w = $(" p").toArray()
+	for(i=0; i<x.length; i++){
+		$(x[0]).css('color','blue')
+		$(y[1]).css('color','green')
+		$(z[2]).css('background-color','red')
+		$(w[3]).css('color','pink')
+	}
+
+	// a[0].style.color="yellow";
+	// a[1].style.color="green";
+	// a[2].style.backgroundColor="yellow";
+	// a[3].style.color="pink";
+
+
+</script>
+</body>
+</html>

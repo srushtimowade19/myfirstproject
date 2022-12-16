@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<button onclick="left();">left</button>
+<button onclick="right();">right</button>
+<div id="d1" style="width:50px; background-color: black; height: 50px;"></div>
+
+
+<script type="text/javascript">
+	
+// 	a=document.getElementById('d1');
+// 	i=0;
+// 	function left(){
+// 	//css
+// 	a.style.marginLeft=i+'px';
+// 	i--;
+
+// }
+// function right(){
+// 	//css
+// 	a.style.marginLeft=i+'px';
+// 	i++;
+	
+// }
+
+
+	i=0;
+	function left() {
+		--i
+		$('#d1').css('margin-left',i+'px')
+		
+	}
+	function right(){
+		++i
+		$('#d1').css('margin-right',i+'px')
+		
+	}
+
+</script>
+
+
+ 
+</body>
+</html>

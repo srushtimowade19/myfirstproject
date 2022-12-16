@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+
+  </title>
+  <style type="text/css">
+    body {
+    margin: 0 0 55px 0;
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    display: flex;
+    overflow-x: auto;
+}
+
+.navlink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+}
+
+.navlink:hover {
+    background-color: #eeeeee;
+}
+
+.navlink--active {
+    color: #009578;
+}
+
+.navicon {
+    font-size: 18px;
+}
+
+  </style>
+</head>
+<body>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<nav class="nav">
+  <a href="#" class="navlink navlink--active">
+    <i class="material-icons navicon">dashboard</i>
+    <span class="navtext">Dashboard</span>
+  </a>
+  <a href="#" class="navlink ">
+    <i class="material-icons navicon">person</i>
+    <span class="navtext">Profile</span>
+  </a>
+  <a href="#" class="navlink">
+    <i class="material-icons navicon">devices</i>
+    <span class="navtext">Devices</span>
+  </a>
+  <a href="#" class="navlink">
+    <i class="material-icons navicon">lock</i>
+    <span class="nav__text">Privacy</span>
+  </a>
+
+</nav>
+</body>
+</html>

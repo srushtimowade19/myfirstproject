@@ -1,0 +1,124 @@
+<!-- color font(increase or decrease) and background-color change  -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+</head>
+<body>
+<p id="p1">This is javascript</p>
+<button onclick="fun1('black');">color add</button>
+<button onclick="fun1('white');">color remove</button>
+<button onclick="fun2('red');">background color add</button>
+<button onclick="fun2('white');">background color remove</button>
+<button onclick="fun3('larger');">Incrise font size</button>
+<button onclick="fun3('smaller');">decrise fornt size</button>
+<button onclick="fun4('bold');">Bold</button>
+<button onclick="fun4('normal');">Un Bold</button>
+<button onclick="fun5('italic');">Italic</button>
+<button onclick="fun5('normal');">Un Italic</button>
+
+<script type="text/javascript">
+	//to select particular element
+	a=document.getElementById('p1');
+	
+function fun1(arg){
+	//css
+	a.style.color=arg;
+	a.style.border="2px solid black";
+}
+function fun2(arg){
+	//css
+	a.style.backgroundColor=arg;
+	a.style.border="2px solid black";
+}
+function fun3(arg){
+	//css
+	a.style.fontSize=arg;
+
+
+
+}
+function fun4(arg){
+	//css
+	a.style.fontWeight=arg;
+
+
+}
+function fun5(arg){
+	//css
+	a.style.fontStyle=arg;
+
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
+ -->
+<!-- color font(increase or decrease) and background-color change  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+</head>
+<body>
+<p id="p1">This is javascript</p>
+<button onclick="fun1('black');">color add</button>
+<button onclick="fun1('white');">color remove</button>
+<button onclick="fun2('red');">background color add</button>
+<button onclick="fun2('white');">background color remove</button>
+<button onclick="fun3('larger');">Incrise font size</button>
+<button onclick="fun3('smaller');">decrise fornt size</button>
+<button onclick="fun4('bold');">Bold</button>
+<button onclick="fun4('normal');">Un Bold</button>
+<button onclick="fun5('italic');">Italic</button>
+<button onclick="fun5('normal');">Un Italic</button>
+
+<script type="text/javascript">
+	//to select particular element
+	// a=document.getElementById('p1');
+	
+function fun1(arg){
+	//css
+	// a.style.color=arg;
+	// a.style.border="2px solid black";
+	$('#p1').css('color',arg, 'border','2px solid black')
+}
+function fun2(arg){
+	// //css
+	// a.style.backgroundColor=arg;
+	// a.style.border="2px solid black";
+	$('#p1').css('background-color',arg,'border','2px solid black')
+}
+function fun3(arg){
+	//css
+	// a.style.fontSize=arg;
+	$('#p1').css('font-size',arg)
+}
+function fun4(arg){
+	//css
+	// a.style.fontWeight=arg;
+	$('#p1').css('font-weight',arg)
+
+}
+function fun5(arg){
+	//css
+	// a.style.fontStyle=arg;
+	$('#p1').css('font-style',arg)
+
+}
+
+
+
+
+
+</script>
+</body>
+</html>
